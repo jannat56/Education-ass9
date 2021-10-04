@@ -1,20 +1,46 @@
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
+import { Col, Form, Row } from 'react-bootstrap';
 
 const Contact = () => {
     return (
-        <div className="w-50 contact">
-           <div className="mb-3">
-               <h1>Contact Us</h1>
-  <label for="exampleFormControlInput1" className="form-label">Email address</label>
-  <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-</div>
-<div className="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  <button className="btn btn-warning mt-4">Submit</button>
-</div>
+      
+        <div className="container bg-dark mt-4">
+          <h3 className="mt-4 p-4">Contact Us</h3>
+          <Form className="container p-4">
+  <Form.Group as={Row} className="mb-3" controlId="formHorizontalEmail">
+    <Form.Label column sm={2}>
+     Name
+    </Form.Label>
+    <Col sm={10}>
+      <Form.Control type="email" placeholder="Name" />
+    </Col>
+  </Form.Group>
+
+  <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+    <Form.Label column sm={2}>
+      Email
+    </Form.Label>
+    <Col sm={10}>
+      <Form.Control type="password" placeholder="Email" />
+    </Col>
+  </Form.Group>
+  <Form.Group as={Row} className="mb-3" controlId="formHorizontalPassword">
+    <Form.Label column sm={2}>
+      Course
+    </Form.Label>
+    <Col sm={10}>
+      <Form.Control type="password" placeholder="course name" />
+    </Col>
+  </Form.Group>
+  
+  <Form.Group as={Row} className="mb-3">
+    <Col sm={{ span: 10, offset: 2 }}>
+      <Button className="btn btn-warning " type="submit">Submit</Button>
+    </Col>
+  </Form.Group>
+</Form>
         </div>
-        
     );
 };
 

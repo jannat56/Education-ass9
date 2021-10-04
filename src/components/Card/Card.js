@@ -6,10 +6,12 @@ const Card = (props) => {
     const {img,Course, Day, task, Amount} = props.course;
     
     return (
-        <div>
-            <div className="col-md-4 mx-10 mx-auto">
-                    <div class="card" >
-                <img src={img}className="card-img-top" alt=""/>
+        
+            <div className="">
+                    <div class="card h-100" >
+               <div className="card-img">
+               <img src={img} className="card-img-top" alt=""/>
+               </div>
                 <div className="card-body">
                     <h3 className="color">Couse Title: {Course}</h3>
                     <h5 className="color">Days: {Day}</h5>
@@ -20,7 +22,7 @@ const Card = (props) => {
                 </div>
                 </div>
                 </div>
-                </div>
+               
             
     );
 };

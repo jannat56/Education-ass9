@@ -10,7 +10,7 @@ const About = () => {
             <section className="">
       <div>
       <h2 className="about-us mt-4 mb-4 p-4">About us</h2>
-        <h5 className="mt-4 mb-4"><span className="orange-color">Web DEV</span> World!</h5>
+        <h5 className="mt-4 mb-4"><span className="color">Web DEV</span> World!</h5>
         <p>
         A complete guideline of website designing through 12 course tutorial, quiz, notes and many more.
         </p>

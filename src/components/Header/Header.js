@@ -4,7 +4,7 @@ import "./Header.css"
 
 const Header = () => {
     return (
-        <div className="headind">
+        <div className="headind mt-4">
             <h1><span className="color">Welcome</span> to Your Fav <span className="color">Education</span>  Center</h1>
         <h3><span className="color">WEB Development </span>Course</h3>
         </div>
