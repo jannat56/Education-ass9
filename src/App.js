@@ -22,6 +22,9 @@ function App() {
       <Nabvar></Nabvar>
       <Header></Header>
       <Switch>
+      <Route exact path="/">
+        <Home></Home>
+      </Route>
         <Route path="/home">
         <Home></Home>
       </Route>
@@ -31,14 +34,10 @@ function App() {
         <Route path="/service">
         <Service></Service>
       </Route>
-      
-        <Route path="/contact">
+      <Route path="/contact">
         <Contact></Contact>
       </Route>
-      <Route exact path="/">
-        <Home></Home>
-      </Route>
-        <Route>
+      <Route exact path="*">
         <NotFound></NotFound> 
       </Route>
       </Switch>
