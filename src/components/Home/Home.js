@@ -87,7 +87,7 @@ const Home = () => {
                         
                        {
 
-                           fourCourse.map(course=><Card course={course}></Card>)
+                           fourCourse.map((course,index)=><Card key={index} course={course}></Card>)
                        }
                     </div>  
       </section>

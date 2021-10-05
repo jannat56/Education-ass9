@@ -21,7 +21,7 @@ const Service = () => {
                         
                        {
 
-                           courses.map(course=><Card course={course}></Card>)
+                           courses.map((course,index)=><Card key={index} course={course}></Card>)
                        }
                     </div>  
             </div>
